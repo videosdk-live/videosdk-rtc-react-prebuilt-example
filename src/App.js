@@ -39,7 +39,7 @@ export default function App() {
   }, []);
 
   const getToken = async () => {
-    const ENDPOINT = "http://192.168.0.81:9000/";
+    const ENDPOINT = "http://192.168.0.81:9000/"; // localhost:9000
     try {
       const response = await fetch(`${ENDPOINT}get-token`, {
         method: "GET",

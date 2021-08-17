@@ -1,71 +1,94 @@
-# Getting Started with Create React App
+# Video SDK No Code Prebuilt App for React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is it?
 
-## Available Scripts
+This code sample demonstrates a one-to-one and group video call application built with [Video SDK RTC Prebuilt SDK](https://docs.videosdk.live/docs/realtime-communication/sdk-reference/prebuilt-sdk-js/setup) and [Video SDK RTC JS SDK](https://docs.videosdk.live/docs/realtime-communication/sdk-reference/javascript-sdk/setup)
 
-In the project directory, you can run:
+- Built for serverless video calling experience.
+- Scale it upto 5,000 participants with low code.
+- 10,000 minutes free on monthly basis.
+- Inbuilt video and audio quality optimization.
+- Inbuilt chat poll, whiteboard, Q and A support.
 
-### `yarn start`
+![Video API example](./public/prebuilt.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [x] Completely Low code and serverless.
+- [x] Video API with real-time audio, video and data streams
+- [x] 5,000+ participants support
+- [x] Chat support with rich media.
+- [x] Screen sharing with HD and Full HD.
+- [x] Play realtime video in meeting
+- [x] Connect it with social media such as Facebook, Youtube etc (RTMP out support).
+- [x] Intelligent speaker switch
+- [x] Record your meetings on cloud
+- [x] Inbuilt support of whiteboard, poll and Q & A.
+- [x] Customize UI as per your needs.
 
-### `yarn test`
+## Browser Support
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/realtime-communication/see-also/device-browser-support)
 
-### `yarn build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Basics of React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## SERVER
 
-### `yarn eject`
+1. Clone the repo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```sh
+   $ git clone https://github.com/videosdk-live/videosdk-rtc-nodejs-sdk-example
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Copy the `.env.example` file to `.env` file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```sh
+   $ cp .env.example .env
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Update the api key and secret values in the `.env` file with the ones generated from the developer console.
 
-## Learn More
+   ```
+   VIDEOSDK_API_KEY=''
+   VIDEOSDK_SECRET_KEY=''
+   VIDEOSDK_API_ENDPOINT=https://api.zujonow.com
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Install NPM packages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   $ npm install
+   ```
 
-### Code Splitting
+5. Run the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```sh
+   $ npm run start
+   ```
 
-### Analyzing the Bundle Size
+## CLIENT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone current repo
+2. Copy the `.env.example` file to `.env` file.
 
-### Making a Progressive Web App
+   ```sh
+   $ cp .env.example .env
+   ```
+3. Install NPM packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```sh
+   $ npm install
+   ```
+4. Run the client
 
-### Advanced Configuration
+   ```sh
+   $ npm run start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Resources
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# videosdk-rtc-react-prebuilt-example
+Visit, [https://www.videosdk.live/](https://www.videosdk.live/) to generate API key and secret.

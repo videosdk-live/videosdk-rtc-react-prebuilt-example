@@ -5,7 +5,6 @@ export default function App() {
   useEffect(async () => {
     const token = await getToken();
     const meetingId = await getMeetingId(token);
-    console.log("Meeting id", { meetingId, token });
     if (meetingId) {
       let name = "Demo User";
       const videoMeetingSpecs = {
@@ -39,15 +38,17 @@ export default function App() {
   }, []);
 
   const getToken = async () => {
-    const ENDPOINT = "http://192.168.0.81:9000/"; // localhost:9000
     try {
-      const response = await fetch(`${ENDPOINT}get-token`, {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_VIDEOSDK_API_ENDPOINT}/get-token`,
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
       const { token } = await response.json();
       return token;
     } catch (e) {
@@ -56,12 +57,13 @@ export default function App() {
   };
   const getMeetingId = async (token) => {
     try {
-      const VIDEOSDK_API_ENDPOINT = `https://api.zujonow.com/v1/meetings`;
+      const VIDEOSDK_API_ENDPOINT = `${process.env.REACT_APP_VIDEOSDK_API_ENDPOINT}/create-meeting`;
       const options = {
         method: "POST",
         headers: {
-          Authorization: token,
+          "Content-Type": "application/json",
         },
+        body: JSON.stringify({ token }),
       };
       const response = await fetch(VIDEOSDK_API_ENDPOINT, options)
         .then(async (result) => {

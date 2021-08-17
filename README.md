@@ -72,7 +72,7 @@ Visit our official guide for [Browser Support](https://docs.videosdk.live/docs/r
    $ npm run start
    ```
 
-## Client-side (vue project)
+## Client-side (react project)
 
 1. Clone the repo
 

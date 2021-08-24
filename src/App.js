@@ -35,7 +35,7 @@ export default function App() {
       brandLogoURL: "https://picsum.photos/200",
       brandName: "Awesome startup",
 
-      participantCanLeave: false, // if false, leave button won't be visible
+      participantCanLeave: true, // if false, leave button won't be visible
     };
 
     const meeting = new VideoSDKMeeting();

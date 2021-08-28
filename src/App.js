@@ -36,6 +36,22 @@ export default function App() {
       brandName: "Awesome startup",
 
       participantCanLeave: true, // if false, leave button won't be visible
+
+      livestream: {
+        autoStart: true,
+        outputs: [
+          // {
+          //   url: "rtmp://x.rtmp.youtube.com/live2",
+          //   streamKey: "<STREAM KEY FROM YOUTUBE>",
+          // },
+        ],
+      },
+
+      permissions: {
+        askToJoin: false, // Ask joined participants for entry in meeting
+        toggleParticipantMic: true, // Can toggle other participant's mic
+        toggleParticipantWebcam: true, // Can toggle other participant's webcam
+      },
     };
 
     const meeting = new VideoSDKMeeting();

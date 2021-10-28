@@ -2212,10 +2212,10 @@
     "@typescript-eslint/types" "4.29.1"
     eslint-visitor-keys "^2.0.0"
 
-"@videosdk.live/js-prebuilt@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@videosdk.live/js-prebuilt/-/js-prebuilt-0.0.13.tgz#8075d4e04c2ab283f0366341dfebbba95b937184"
-  integrity sha512-k+LMHWRqfOVJdDTdp3YnTDF1qJET5oRQlxb9ooCmymD1USlFh/1hD6j13dwcdAB7r7HcXEWEjAOAUp0OL3LXjA==
+"@videosdk.live/rtc-js-prebuilt@^0.1.15":
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/@videosdk.live/rtc-js-prebuilt/-/rtc-js-prebuilt-0.1.15.tgz#86bae0a50a1eacd3a4129a732697ca66868c5a5c"
+  integrity sha512-ba/a74o2gLV00BUNNWSvaDCHVJVhUFBzbMgO5eDOihNp6xGmQW1R/tWtEKlK63KaTQKZ0TFCVMgAzYK1OUxWQg==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"

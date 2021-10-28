@@ -52,6 +52,17 @@ export default function App() {
         toggleParticipantMic: true, // Can toggle other participant's mic
         toggleParticipantWebcam: true, // Can toggle other participant's webcam
       },
+
+      joinScreen: {
+        visible: true, // Show the join screen ?
+        title: "Daily scrum", // Meeting title
+        meetingUrl: window.location.href, // Meeting joining url
+      },
+
+      pin: {
+        allowed: true, // participant can pin any participant in meeting
+        layout: "SPOTLIGHT", // meeting layout - GRID | SPOTLIGHT | SIDEBAR
+      },
     };
 
     const meeting = new VideoSDKMeeting();

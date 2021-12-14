@@ -23,13 +23,12 @@ export default function App() {
       chatEnabled: true,
       screenShareEnabled: true,
       pollEnabled: true,
-      whiteBoardEnabled: true,
+      whiteboardEnabled: true,
       raiseHandEnabled: true,
 
       recordingEnabled: true,
       recordingEnabledByDefault: false,
       recordingWebhookUrl: "https://www.videosdk.live/callback",
-      participantCanToggleRecording: true,
 
       brandingEnabled: true,
       brandLogoURL: "https://picsum.photos/200",
@@ -51,6 +50,11 @@ export default function App() {
         askToJoin: false, // Ask joined participants for entry in meeting
         toggleParticipantMic: true, // Can toggle other participant's mic
         toggleParticipantWebcam: true, // Can toggle other participant's webcam
+        removeParticipant: true, // Remove other participant from meeting
+        endMeeting: true, // End meeting for all participant
+        drawOnWhiteboard: true, // Can Draw on whiteboard
+        toggleWhiteboard: true, // Can toggle whiteboard
+        toggleRecording: true, // Can toggle recording
       },
 
       joinScreen: {

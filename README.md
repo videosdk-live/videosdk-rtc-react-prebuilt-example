@@ -1,4 +1,5 @@
 # Video SDK No Code Prebuilt App for React.
+THIS REPO is DEPRECATED. Please refer to https://github.com/videosdk-live/videosdk-rtc-prebuilt-examples
 
 ## What is it?
 
